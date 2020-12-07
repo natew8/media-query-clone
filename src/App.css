@@ -1,0 +1,247 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.App{
+  overflow-x: hidden;
+}
+.header{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  color: white;
+  padding: 1rem 0;
+  z-index: 1;
+}
+.head-container{
+  display: flex;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .75rem;
+
+}
+
+.site-title{
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+}
+.nav-item{
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.menu-button{
+  padding: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #fed136;
+  border: 0;
+  display: none;
+  border-radius: 5px;
+}
+.burger{
+  display: block;
+  margin-left: 5px;
+}
+.burger-bars{
+  width: 15px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 3px 0;
+}
+.menu-items{
+  height: 180px;
+  color: white;
+  list-style: none;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 500ms;
+  overflow: hidden;
+}
+.menu-items-hide{
+ height: 0vh;
+ padding: 0;
+}
+.new-menu-item{
+  text-transform: uppercase;
+  padding: .3rem;
+  font-weight: 400;
+}
+
+.main-page{
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  background-attachment: scroll;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  padding-top: 17rem;
+  padding-bottom: 12rem;
+}
+.main-page-container{
+  background-color: transparent;
+  max-width: 1240px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-message{
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.welcome-message-2{
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.button{
+  padding: 1.25rem 2.5rem;
+  text-align: center;
+  background-color:#fed136 ;
+  font-size:  1.5rem;
+  text-transform: uppercase;
+}
+@media(max-width:1280px){
+  .header{
+    padding:0%;
+  }
+  .head-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .menu-items{
+    max-width: 960px;
+  }
+
+}
+@media(min-width:1030px){
+  .menu-items{
+    display: none;
+  }
+}
+
+@media(max-width: 1030px){
+  .head-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+   
+  }
+  .header{
+    background-color:rgb(32, 36, 40) ;
+  }
+  .menu-items{
+    max-width: 720px;
+  }
+  .nav-container{
+    display: none;
+  }
+
+  .menu-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media(max-width:875px){
+  .main-page-container{
+    max-width: 720px; ;
+  }
+  .welcome-message{
+    font-size: 1.25rem;
+  }
+  .welcome-message-2{
+    font-size: 3.5rem;
+  }
+  .button{
+    padding: .75rem 1.75rem;
+  }
+}
+@media(max-width:755px){
+
+  .head-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 640px;
+  }
+  .menu-items{
+    max-width: 640px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+@media (max-width:695px){
+  .welcome-message-2{
+    font-size: 2.75rem;
+  }
+}
+@media(max-width:545px){
+  .welcome-message{
+    font-size: 2rem;
+  }
+  .welcome-message-2{
+    display: none;
+  }
+  .button{
+    padding: 1.25rem 2.25rem;
+  }
+
+
+}
+
+@media(max-width:415px){
+  .site-title{
+    height: 1.5rem;
+  }
+  .menu-button{
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+}
